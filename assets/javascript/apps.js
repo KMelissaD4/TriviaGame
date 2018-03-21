@@ -1,27 +1,34 @@
 // JavaScript Document
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<script>
-// Set the date we're counting down to
-var countDownTime = new Time("00:60").getTime();
+var number = 60;
+//  Variable that will hold our interval ID when we execute
+//  the "run" function
+var intervalId;
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+function run() {
+  clearInterval(intervalId);
+  intervalId = setInterval(decrement, 1000);
+}
 
-	// Find the distance between now and the count down date
-	var distance = countDownTime - now;
-	
-	// Time calculations for minutes and seconds
-	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-	
-	// Display the result in the element with id="timer"
-	document.getElementById("timer").innerHTML = minutes + "m " + seconds + "s ";
-	
-	// If the count down is finished, write some text 
-	if (distance < 0) {
-		clearInterval(x);
-		document.getElementById("timer").innerHTML = "Times Up! Play again.";
-	}
-}, 1000);
-</script>
+//  The decrement function.
+function decrement() {
+  //  Decrease number by one.
+  number--;
+  //  Show the number in the #show-number tag.
+  $("#timer").html("<h2>" + number + "</h2>");
+  //  Once number hits zero...
+  if (number === 0) {
+    //  ...run the stop function.
+    stop();
+    //  Alert the user that time is up.
+    alert("Time is up!");
+  }
+}
+
+//  The stop function
+function stop() {
+  clearInterval(intervalId);
+}
+
+//Execute the run function.
+run();

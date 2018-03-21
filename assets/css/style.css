@@ -1,0 +1,33 @@
+body {
+    height: 100%;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	align-self: center;
+	text-align: center;
+	align-items: center;
+	align-content: center;
+	background-image: url("../images/My Post.jpg");
+    height: 100%; 
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gameBackground {
+	margin: 4rem 4rem 4rem 4rem;
+	padding: 1rem 1rem 1rem 1rem;
+}
+
+.intro {
+	color: rgba(253, 254, 254, 1.0);
+	background-color: rgba(33, 47, 60, 0.6);
+}
+
+#countDownTimer {
+	color: rgba(253, 254, 254, 1.0);
+	background-color: rgba(33, 47, 60, 0.6);
+}
+
+form {
+	background-color: rgba(131, 145, 146, 0.8);
+	padding: 1rem 1rem 1rem 1rem;
+}

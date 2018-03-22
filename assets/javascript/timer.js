@@ -1,6 +1,4 @@
-var bing = document.getElementById('bing');
-
-var seconds = 10;
+var seconds = 60;
 	function secondsPassed() {
 		var minutes = Math.round((seconds - 30) / 60);
 		var remainingSeconds = seconds % 60;
@@ -12,8 +10,7 @@ var seconds = 10;
 		document.getElementById('countdown').innerHTML = minutes + ':' + remainingSeconds;
 		
 		if(seconds == 0) {
-			clearInterval(countdownTimer);
-			document.getElementById('countdown').innertHTML = 'Buzz Buzz';
+			clearInterval(countdownTimer);	document.getElementById('countdown').innertHTML = 'Buzz Buzz';
 		   }
 		
 		else{
@@ -22,4 +19,3 @@ var seconds = 10;
 	}
 
 var countdownTimer = setInterval('secondsPassed()', 1000);
-bing.play();

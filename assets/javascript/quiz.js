@@ -33,7 +33,7 @@ function submitAnswers() {
 
 	//display results
 	var results = document.getElementById('results');
-	results.innerHTML = '<h1 style="font-weight: bold;">Correct answers: <span>' + wins + '</span> <br> Incorrect answers: <span>' + losses + '</span> <br> Out of <span>' + total + '</span> questions. Thanks for playing!</h1>';	
+	results.innerHTML = '<h1 style="font-weight: bold;">Correct answers: <span>' + wins + '</span> <br> Incorrect answers: <span>' + losses + '</span> <br> Total questions: <span>' + total + '</span> <br> Thanks for playing!</h1>';	
 		
 	alert('You scored ' + wins + ' out of ' + total + '!');
 	

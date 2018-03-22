@@ -4,9 +4,8 @@
 <meta charset="UTF-8">
 <title>Trivia Game!</title>
 <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-<script src="assets/javascript/app.js"></script>
+<script src="assets/javascript/timer.js"></script>
 <script src="assets/javascript/quiz.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>		
@@ -25,12 +24,11 @@
 			<p>You'll have 1 minute to answer all questions. Good luck!</p>
 		</div>
 		
-		<div id="countdownTimes">
-			<h1>Time Remaining: 
-				<div id="timer">00:10</div>
-			</h1>
+		<div class="clock">
+			<span id="countdown" class="timer"></span>
+			<audio autoplay src="assets/javascript/law.mp3";></audio>
 		</div>
-	
+		
 		<form name="quizForm" onsubmit="return submitAnswers()">
 			<p id="q1" style="font-weight: bold">Q1 - Detective Olivia Kitson has been a member of the SKU squad for how many years?</p>
 			<div>

@@ -20,15 +20,21 @@ body {
 .intro {
 	color: rgba(253, 254, 254, 1.0);
 	background-color: rgba(33, 47, 60, 0.6);
+	margin-bottom: auto;
 	padding: .5rem .5rem .5rem .5rem;
-}
-
-#countdownTimes {
-	color: rgba(253, 254, 254, 1.0);
-	background-color: rgba(33, 47, 60, 0.6);
 }
 
 form {
 	background-color: rgba(131, 145, 146, 0.8);
-	padding: 1rem 1rem 1rem 1rem;
+	padding: .5rem 1rem .5rem 1rem;
+}
+
+.clock {
+	font-size: 4rem;
+	font-weight: bold;
+	color: rgba(253, 254, 254, 1.0);
+	background-color: rgba(33, 47, 60, 0.6);
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+	padding: .5rem .5rem .5rem .5rem;
 }
